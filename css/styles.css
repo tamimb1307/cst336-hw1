@@ -1,7 +1,10 @@
 body {
+    
     background-color: lightblue;
-    /* background-image: url("hw/cst336-hw1/img/back.png"); */
+    background-image: url(back.png); 
     color:gray; 
+    border-style: solid;
+    border-right-color: orange;
 }
 /* the above gives it gray the below center aligns the text, multiple html elements can be selected.*/
 header, main, nav, footer {
@@ -25,8 +28,12 @@ nav a:hover { /*psuedo class*/
 }
 
 main { /* Make text to the right of your photo instead of underneath and center it*/
-
+    display: flex;
     justify-content: center;
+}
+
+#paragraph {
+         font-size: 22px;
 }
 
 footer { /* Change footer text size and color*/
@@ -35,7 +42,7 @@ footer { /* Change footer text size and color*/
 }
 
 .current {
-  color: gray;  /* Special color for link of home page */
+  color: orange;  /* Special color for link of home page */
 }
 
 h1 {
@@ -44,33 +51,3 @@ h1 {
     margin-bottom: 0px;
 }
 
-table {
-    margin: 0px auto;
-}
-
-td { /*increasing font size for more consistency*/
-    padding-right: 10px;
-    font-size: 1.3em;
-}
-
-td strong { /*Make header stand out with strong*/
-    color: orange;
-}
-
-#table-header {
-    background-color: #351a00;
-}
-
-.table-row {
-    background-color: #753900;
-}
-
-ul {
-    width:500px;
-    margin: 0 auto;
-    text-align: left;
-}
-
-.hobby {
-    color: yellow;
-}
